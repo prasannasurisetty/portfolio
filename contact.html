@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page of Prasanna Surisetty. Reach out for inquiries and collaborations.">
+    <title>Contact Me - Prasanna Surisetty</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            color: #ededed;
+            background-color: black;
+            line-height: 1.6;
+        }
+        
+        /* Header Styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 30px;
+            transition: 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #0ef;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 10%;
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .contact-content h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .contact-content p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        /* Form Box with Shadow */
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            background-color: #1c1c1c; /* Dark background for form */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0ef;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #0ef;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 250px;
+            align-self: center;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .contact-content h1 {
+                font-size: 30px;
+            }
+
+            .contact-content p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 15px 5%;
+            }
+
+            .navbar a {
+                font-size: 14px;
+                margin-left: 20px;
+            }
+
+            .contact-content h1 {
+                font-size: 24px;
+            }
+
+            .contact-content p {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or would like to work together, feel free to reach out!</p>
+
+            <div class="form-container">
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prasanna Surisetty | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

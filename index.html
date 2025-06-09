@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prasanna Surisetty - Web Designer and Developer Portfolio. Expertise in frontend and backend development.">
+    <meta name="keywords" content="Prasanna, Web Developer, Portfolio, Frontend Developer, Backend Developer">
+    <title>Prasanna Portfolio</title>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    color: #ededed;
+    background-color: black;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Navbar Links */
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+/* Home Section Styling */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.home-content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Social Media Icons */
+.home-scl a {
+    margin: 0 10px;
+    font-size: 25px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.home-scl a:hover {
+    color: #0ef;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer a {
+    color: #0ef;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 0 15px;
+        font-size: 16px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .home-scl a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 16px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .home-scl a {
+        font-size: 18px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <!-- <a href="contact.html">Contact</a> -->
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Prasanna Surisetty</h1>
+            <h3>And I'm a</h3>
+            <p>I'm a Web Designer. <br>My expertise is in website design, frontend, and backend development.</p>
+            <!-- Social Media Links -->
+            <div class="home-scl">
+                <a href="https://github.com/prasannasurisetty" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prasanna-surisetty-8057aa207" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/prasanna_surisetty/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:prasannasurisetty9@gmail.com"><i class="fa fa-envelope email-icon"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Prasanna Surisetty | All Rights Reserved</p>
+        <a href="mailto:prasannasurisetty9@gmail.com">Contact Me</a>
+    </footer>
+
+    <!-- <script src="portfolio.js" async defer></script> -->
+</body>
+</html>

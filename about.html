@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Prasanna Surisetty - Web Developer and Designer. Learn more about my journey, skills, and expertise.">
+    <meta name="keywords" content="About, Prasanna, Web Developer, Portfolio">
+    <title>About Me - Prasanna Surisetty</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    color: #ededed;
+    background-color: black;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+/* About Section Styling */
+.about {
+    padding: 100px 10%;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.personal-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.personal-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.experience li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Call to Action Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #0ef;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 0 15px;
+        font-size: 16px;
+    }
+
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .about-content p, .personal-info li, .experience li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 24px;
+    }
+
+    .about-content p, .personal-info li, .experience li {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <!-- <a href="contact.html">Contact</a> -->
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>Hello! I’m <strong>Prasanna Surisetty</strong>, a passionate web developer and designer with expertise in both frontend and backend technologies.</p>
+            <p>I have a strong background in creating visually appealing and functional websites. With a focus on both front-end and back-end development, I have worked on a range of projects, from small business websites to dynamic web applications. Through my internship and current projects, I’ve honed my skills in HTML, CSS, JavaScript, PHP, and SQL, while consistently delivering efficient and user-friendly solutions.
+
+                As a fresher with recent internship experience, I am continuously expanding my expertise by working on freelance projects and personal web development initiatives. My goal is to help businesses grow and succeed online by building intuitive, high-performance websites that meet their needs.</p>
+            
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <ul>
+                    <li><strong>Name:</strong> Prasanna Surisetty</li>
+                    <li><strong>Email:</strong> prasannasurisetty9@example.com</li>
+                    <li><strong>Phone:</strong> +91-9493750595</li>
+                    <li><strong>Location:</strong> Visakhapatnam,Andhra Pradesh, India</li>
+                </ul>
+            </div>
+
+            <!-- Experience and Expertise -->
+            <!-- <div class="experience">
+                <h2>Experience & Expertise</h2>
+                <p>With over 2 months of experience in the e</p>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript, and modern frontend frameworks</li>
+                    <li>Backend development using PHP and SQL</li>
+                    <li>Responsive design and cross-browser compatibility</li>
+                    <li>Website optimization and SEO best practices</li>
+                    <li>Developing clean, maintainable code</li>
+                </ul>
+            </div> -->
+
+            <!-- Call to Action -->
+            <a href="mailto:prasannasurisetty9@gmail.com"" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prasanna Surisetty | All Rights Reserved</p>
+    </footer>
+
+    <script src="about.js" async defer></script>
+</body>
+</html>

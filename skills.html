@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills and Expertise of Prasanna Surisetty. Learn about the technologies and tools I specialize in.">
+    <meta name="keywords" content="Skills, Web Development, Frontend, Backend, Prasanna Surisetty">
+    <title>My Skills - Prasanna Surisetty</title>
+    <!-- <link rel="stylesheet" href="skills.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    color: #ededed;
+    background-color: black;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+/* Skills Section Styling */
+.skills {
+    padding: 100px 10%;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.skills-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.skills-content p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.skill {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.skill i {
+    font-size: 40px;
+    color: #0ef;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 16px;
+}
+
+.skill:hover {
+    background-color: #333;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 0 15px;
+        font-size: 16px;
+    }
+
+    .skills-content h1 {
+        font-size: 30px;
+    }
+
+    .skills-content p, .skill h3, .skill p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .skills-content h1 {
+        font-size: 24px;
+    }
+
+    .skills-content p, .skill h3, .skill p {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <!-- <a href="contact.html">Contact</a> -->
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="skills-content">
+            <h1>My Skills</h1>
+            <p>Here are the technologies, languages, and tools I am proficient in:</p>
+
+            <div class="skills-list">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Expert in creating semantic, accessible, and responsive layouts using HTML5.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Skilled in designing layouts, animations, and responsive web pages using CSS3 and modern frameworks like Bootstrap.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Proficient in JavaScript for building interactive, dynamic web applications, including experience with ES6+ features.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <p>Experience with backend development using PHP to create dynamic, data-driven websites and applications.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <p>Experienced in database management, writing SQL queries, and working with MySQL to handle data effectively.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <p>Utilize Bootstrap for fast, responsive, and mobile-first design implementations.</p>
+                </div>
+                <!-- <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Hands-on experience in Python for scripting, automation, and backend development.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO</h3>
+                    <p>Knowledge of SEO best practices to optimize websites for better search engine rankings and performance.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prasanna Surisetty | All Rights Reserved</p>
+    </footer>
+
+    <script src="skills.js" async defer></script>
+</body>
+</html>
